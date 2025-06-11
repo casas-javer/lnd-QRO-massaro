@@ -33,7 +33,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap"
         rel="stylesheet">
-            <link rel="stylesheet" href="validaciones.css">
+    <link rel="stylesheet" href="validaciones.css">
     <style>
         :root {
             --blue: #313a41;
@@ -45,7 +45,7 @@
             font-family: 'Poppins', sans-serif !important;
         }
 
-               select {
+        select {
             display: none;
         }
 
@@ -570,9 +570,8 @@
     <div id="popup" class="popup-overlay">
         <div class="popup-content">
             <span class="close-btn" onclick="closePopup()">&times;</span>
-            <img src="assets/images/massaro-banner.jpg" alt="Promoción Massaro Residencial" class="popup-img">
-            <!-- <img src="https://casas-javer.github.io/lnd-AGS-Caranday-2-betel/assets/images/massaro-banner.jpg"
-                alt="Banner promoción massaro" class="popup-img" /> -->
+            <img src="https://casas-javer.github.io/lnd-QRO-massaro/assets/images/massaro-banner.jpg"
+                alt="Banner promoción massaro" class="popup-img" />
         </div>
     </div>
 
@@ -941,27 +940,31 @@
                     <div class="formulario">
                         <h2>Déjanos tu mensaje</h2>
                         <p class="mb-4 text-white">Un asesor se pondrá en contacto a la brevedad.</p>
-<!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
-<!--  If necessary, please modify the charset parameter to specify the        -->
-<!--  character set of your HTML page.                                        -->
-<!--  ----------------------------------------------------------------------  -->
+                        <!--  ----------------------------------------------------------------------  -->
+                        <!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+                        <!--  If necessary, please modify the charset parameter to specify the        -->
+                        <!--  character set of your HTML page.                                        -->
+                        <!--  ----------------------------------------------------------------------  -->
 
-<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
-<script src="https://www.google.com/recaptcha/api.js"></script>
-<script>
- function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
-</script>
+                        <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+                        <script src="https://www.google.com/recaptcha/api.js"></script>
+                        <script>
+                            function timestamp() {var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value); elems["ts"] = JSON.stringify(new Date().getTime()); document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems);} } setInterval(timestamp, 500); 
+                        </script>
 
-<!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: Please add the following <FORM> element to your page.             -->
-<!--  ----------------------------------------------------------------------  -->
+                        <!--  ----------------------------------------------------------------------  -->
+                        <!--  NOTE: Please add the following <FORM> element to your page.             -->
+                        <!--  ----------------------------------------------------------------------  -->
 
-<form class="contacto-outer contact-form " action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00Do0000000b6Io" method="POST">
+                        <form class="contacto-outer contact-form "
+                            action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00Do0000000b6Io"
+                            method="POST">
 
-<input type=hidden name='captcha_settings' value='{"keyname":"CAPCHA_MASSARO","fallback":"true","orgId":"00Do0000000b6Io","ts":""}'>
-<input type=hidden name="oid" value="00Do0000000b6Io">
-<input type=hidden name="retURL" value="https://www.javer.com.mx/gracias?utm_source=google&utm_medium=leads&utm_campaign=massaro&utm_term=marketing">
+                            <input type=hidden name='captcha_settings'
+                                value='{"keyname":"CAPCHA_MASSARO","fallback":"true","orgId":"00Do0000000b6Io","ts":""}'>
+                            <input type=hidden name="oid" value="00Do0000000b6Io">
+                            <input type=hidden name="retURL"
+                                value="https://www.javer.com.mx/gracias?utm_source=google&utm_medium=leads&utm_campaign=massaro&utm_term=marketing">
 
                             <!--  ----------------------------------------------------------------------  -->
                             <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
@@ -1042,7 +1045,7 @@
                                 </div>
 
                                 <select id="00N3l00000Q7A54" name="00N3l00000Q7A54" title="FraccionamientoInterno">
-                    
+
                                     <option selected value="MASSARO">MASSARO</option>
 
                                 </select>
@@ -1170,7 +1173,7 @@
         }
 
     </script>
-  <script>
+    <script>
         const d = document;
         const $form = d.querySelector(".contact-form"),
             $inputs = d.querySelectorAll(".contact-form [required]");
